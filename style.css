@@ -11,6 +11,7 @@ body{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
+    background-color: #FFFDD0;
     color: #777;
     padding: 30px;
 }
@@ -19,7 +20,7 @@ body{
     height: 95vh;
     background-image:linear-gradient(
         to right bottom, 
-        rgba(231, 233, 115, 0.8),
+        rgba(224, 132, 194, 0.918),
         rgba(40, 152, 180, 0.8)),
         url(img/shop.jpg);
     background-size: cover;
@@ -50,16 +51,24 @@ body{
     top: 0;
     right: -100%;
     width: 360px;
+    border-radius: 40px;
     z-index: 1;
     min-height: 100vh;
     padding: 20px;
-    background: #fff;
+    background: linear-gradient(
+        to right bottom, 
+        rgba(248,255,174,1.000),
+        rgba(222,203,164,1.000));
     box-shadow: -2px 0 4px hsl(0, 4%, 15% / 10%);
     transition: 0.3s;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
 }
 
 .cart.active {
@@ -465,4 +474,76 @@ section {
     font-size: 15px;
     font-weight: 600;
     margin-bottom: 20px;
+}
+
+.footer {
+    background: #000;
+    color: #8a8a8a;
+    height: 300px;
+    border-radius: 30px;
+    font-size: 14px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.footer-col-1 {
+    margin-top: 60px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+
+.app-logo {
+    height: 200px;
+    width: 200px;
+}
+
+.img-1, .img-2 {
+    height: 50px;
+    width: 150px;
+}
+
+.para-1 {
+    width: 200px;
+}
+
+.footer-col-2 {
+    margin-top: 100px;
+}
+
+.footer-col-2 img {
+    height: 50px;
+    width: 150px;
+    margin-left: 70px;
+}
+
+.para {
+    width: 310px;
+}
+
+.footer-col-3, .footer-col-4 {
+    margin-top: 90px;
+}
+
+.h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+ul {
+    margin-left: 30px;
+}
+
+hr {
+    margin-top: -70px;
+}
+
+.copyright {
+    text-align: center;
 }
